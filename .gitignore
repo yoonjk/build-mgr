@@ -1,4 +1,13 @@
 # Compiled class file
+#eclipse
+.classpath
+.project
+.factorypath
+.mvn/*
+.settings/*
+target/
+
+# Compiled class file
 *.class
 
 # Log file
