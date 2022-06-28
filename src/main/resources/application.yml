@@ -1,0 +1,21 @@
+
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: ${SERVLET_CONTEXT_PATH:/}
+
+spring:
+  application:
+    name: build-mgr
+  
+  datasource:
+    url: jdbc:h2:${DB_HOME_DIR:~}/test;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: ${USERNAME:sa}
+    password: ${PASSWORD:passw0rd}
+    
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
